@@ -11,11 +11,12 @@ import reducer, {
 import useRealTimeUpdate from "hooks/useRealtimeUpdate";
 
 export default function useApplicationData() {
+  //here is the initial state where been set up with empty 
   const [state, dispatch] = useReducer(reducer, {
     day: "Monday",
     days: [],
     appointments: {},
-    interviewers: {}
+    interviewers: {} 
   });
 
   const setDay = day => dispatch({ type: SET_DAY, day });
