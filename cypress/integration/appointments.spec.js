@@ -1,6 +1,7 @@
+
 describe("Appointments", () => {
   beforeEach(() => {
-    cy.request("POST", "/api/debug/reset");
+    cy.request("GET", "/api/debug/reset");
 
     cy.visit("/");
 

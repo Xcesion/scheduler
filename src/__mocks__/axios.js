@@ -85,3 +85,11 @@ export default {
     return Promise.resolve({ status: 204, statusText: "No Content" });
   })
 };
+
+/* somewhere near the top */
+// import axios from "axios";
+
+// /* test number five */
+// it("shows the save error when failing to save an appointment", () => {
+//   axios.put.mockRejectedValueOnce();
+// });
